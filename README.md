@@ -1,7 +1,5 @@
 # Predictive Maintenance for Printheads with Machine Learning
 
-![Abstract predictive-maintenance pipeline](c366807e-9811-47f4-aee7-2301a761ee29.png)
-
 ## Introduction
 
 This repository contains the notebooks and final report for the **PA (Projet d’approfondissement)** titled **“Predictive maintenance using machine learning for printheads.”** The work was carried out at **HEIA-FR** in collaboration with **iPrint**, and investigates how to use **acoustic self-sensing** signals from piezoelectric inkjet printheads to detect and anticipate nozzle failures.
