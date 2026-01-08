@@ -7,7 +7,7 @@ This repository contains the notebooks and final report for the **PA (Projet d�
 The pipeline isolates the informative **ring-down** portion of each waveform, fits a **physically interpretable damped-sinusoid** model, and uses the resulting **six fitted parameters** as compact features for:
 - **Nozzle-state classification** (jetting vs. non-jetting / missing line)
 - **Predictive maintenance** (forecasting eventual failure at different horizons)
-- **Exploratory pressure regression** (predicting backpressure from acoustic features)
+- **Exploratory pressure regression** (predicting meniscus pressure from acoustic features)
 
 For full methodology, experiments, and discussion, see **`PA_rapport_final.pdf`**.
 
@@ -23,7 +23,7 @@ This repo is notebook-centric: each notebook corresponds to a major step in the 
 | **analysis_of_fits.ipynb** | Exploratory analysis of fitted parameters and fit errors vs pressure and labels; outlier summaries; jet→defect→jet episode analysis; interactive nozzle label map. | Interactive plots (scatter/mean±std/boxplots/maps) and label-conditioned summaries. |
 | **binary_classification.ipynb** | Train and evaluate a **HistGradientBoostingClassifier** for **Jetting vs Non-jetting** (binary). | Group-aware split metrics, confusion matrices, optional distance-correlation analysis. |
 | **steps_before_failure.ipynb** | Predict “eventual failure” K steps ahead (multi-horizon evaluation). | Confusion matrices and metrics per K; compact F1 vs K plot(s). |
-| **predict_pressure.ipynb** | Exploratory regression: predict **backpressure** from fitted ring-down parameters. | Ridge + HistGBRegressor training with grouped CV; test metrics; per-pressure mean prediction plot. |
+| **predict_pressure.ipynb** | Exploratory regression: predict **pressure** from fitted ring-down parameters. | Ridge + HistGBRegressor training with grouped CV; test metrics; per-pressure mean prediction plot. |
 
 ## How to run
 
